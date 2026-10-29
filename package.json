@@ -1,0 +1,44 @@
+{
+  "name": "appside-mcp",
+  "version": "0.1.0",
+  "description": "Read-only Appside documentation, SDK snippets and pricing for coding agents",
+  "type": "module",
+  "bin": {
+    "appside-mcp": "stdio.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "stdio.mjs",
+    "server.mjs",
+    "content.mjs",
+    "sdk-status.mjs",
+    "data.json",
+    "README.md",
+    "server.json"
+  ],
+  "mcpName": "build.appside/mcp",
+  "homepage": "https://appside.build/docs/mcp/?utm_source=npm&utm_medium=listing&utm_campaign=w45-preview&utm_content=readme-mcp",
+  "license": "MIT",
+  "author": "Oded Kovach",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odedkovach/appside-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "appside",
+    "web store",
+    "mobile game",
+    "docs",
+    "pricing"
+  ],
+  "scripts": {
+    "test": "node --test *.test.mjs"
+  }
+}
