@@ -10,5 +10,5 @@ test('initialize, tools, search, snippets and pricing over the bundled snapshot'
  const found=await tool('search_docs',{query:'webhook'});assert(found.results.length>0);assert(found.results.every(r=>r.url.startsWith('https://appside.build/docs/')));
  for(const platform of ['web','node','unity'])assert((await tool('get_sdk_snippet',{platform})).markdown.includes('```'));
  assert.equal((await tool('get_pricing')).feePercent,3.9);
- assert.equal((await call(request('tools/call',{name:'create_store'}))).error.code,-32601);
+ assert.equal((await call(request('tools/call',{name:'create_store'}))).error.code,-32602);
 });
