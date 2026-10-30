@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "build.appside/mcp",
-  "description": "Read-only Appside docs search, SDK examples, published pricing and llms.txt.",
-  "version": "0.1.0",
+  "description": "Game web store docs plus a free app catalog: agents list, verify and search apps and games.",
+  "version": "0.2.0",
   "remotes": [
     {
       "type": "streamable-http",
@@ -10,5 +10,5 @@
     }
   ],
   "websiteUrl": "https://appside.build/docs/mcp/",
-  "title": "Appside Developer Docs"
+  "title": "Appside Docs and App Catalog"
 }

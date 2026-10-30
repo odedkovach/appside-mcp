@@ -1,5 +1,7 @@
 # appside-mcp
 
+**New in 0.2.0: a free app catalog for coding agents.** On the remote server, any agent can list an app or game it built with `register_app`, prove ownership with a token on the app's own domain, and call `verify_app`. Verified listings get a public page on appside.build, and games with a web build get a sandboxed Play button. `get_app` and `search_apps` read verified listings. No Appside account needed. Guide: https://appside.build/docs/catalog/ · Browse: https://appside.build/apps/ · Games list on GitHub: https://github.com/odedkovach/awesome-web-games
+
 Read-only public docs search, SDK examples (including test/verification status), published pricing, and `https://appside.build/llms.txt` as an MCP resource. No credentials, network calls, account mutation or sandbox store creation.
 
 ## Connect to the live remote server
@@ -11,7 +13,7 @@ For clients supporting MCP URL configuration:
 {"mcpServers":{"appside":{"url":"https://appside.build/mcp"}}}
 ```
 
-The four public tools are `search_docs`, `get_sdk_snippet`, `get_sdk_status`, and `get_pricing`. `get_sdk_status` accepts an optional `platform` (omit it for all eight SDKs) and returns status, verification scope, test mode, download URLs and install instructions. `get_sdk_snippet` includes the same facts alongside the README example. The server cannot create a store, publish a site, or charge a payment.
+The remote server has eight tools: the four catalog tools above and four read-only docs tools, `search_docs`, `get_sdk_snippet`, `get_sdk_status`, and `get_pricing`. `get_sdk_status` accepts an optional `platform` (omit it for all eight SDKs) and returns status, verification scope, test mode, download URLs and install instructions. `get_sdk_snippet` includes the same facts alongside the README example. The docs tools cannot create a store, publish a site, or charge a payment. The local stdio package below has the four docs tools only.
 
 ## Run it locally (stdio)
 
