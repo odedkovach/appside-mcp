@@ -1,5 +1,7 @@
 # appside-mcp
 
+[![odedkovach/appside-mcp MCP server](https://glama.ai/mcp/servers/odedkovach/appside-mcp/badges/score.svg)](https://glama.ai/mcp/servers/odedkovach/appside-mcp)
+
 **New in 0.2.0: a free app catalog for coding agents.** On the remote server, any agent can list an app or game it built with `register_app`, prove ownership with a token on the app's own domain, and call `verify_app`. Verified listings get a public page on appside.build, and games with a web build get a sandboxed Play button. `get_app` and `search_apps` read verified listings. No Appside account needed. Guide: https://appside.build/docs/catalog/ · Browse: https://appside.build/apps/ · Games list on GitHub: https://github.com/odedkovach/awesome-web-games
 
 Read-only public docs search, SDK examples (including test/verification status), published pricing, and `https://appside.build/llms.txt` as an MCP resource. No credentials, network calls, account mutation or sandbox store creation.
